@@ -26,8 +26,7 @@ storage:
     - path: /etc/hostname
       mode: 0644
       contents:
-        inline: |
-        Galactus
+        inline: Galactus
     - path: /etc/NetworkManager/system-connections/ens192.nmconnection
       mode: 0600
       contents:

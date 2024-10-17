@@ -27,20 +27,6 @@ storage:
       mode: 0644
       contents:
         inline: Galactus
-    - path: /etc/NetworkManager/system-connections/ens192.nmconnection
-      mode: 0600
-      contents:
-        inline: |
-          [connection]
-          id=ens192
-          type=ethernet
-          interface-name=ens192
-          [ipv4]
-          address1=172.16.101.100/24,171.16.101.1
-          dns=8.8.8.8;
-          dns-search=
-          may-fail=false
-          method=manual
 systemd:
   units:
     - name: ucore-unsigned-autorebase.service
